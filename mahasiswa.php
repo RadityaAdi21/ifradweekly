@@ -11,16 +11,16 @@
         <hr/>
         <table>
             <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="profile.html">Profile</a></td>
-                <td><a href="Contact.html">Contact</a></td>
-                <td><a href="mahasiswa.html">Data Mahasiswa</a></td>
+                <td><a href="index.php">Home</a></td>
+                <td><a href="profile.php">Profile</a></td>
+                <td><a href="Contact.php">Contact</a></td>
+                <td><a href="mahasiswa.php">Data Mahasiswa</a></td>
             </tr>
         </table>
         <br>
         <hr/>
         <h2>Data Mahasiswa</h2>
-        <a href="tambahdata.html"
+        <a href="tambahdata.php"
         button>Tambah Data</button>
         <a>
     

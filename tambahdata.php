@@ -9,7 +9,7 @@
     </head>
     <body>
         <h2>Tambah Data Mahasiswa</h2>
-        <form action="mahasiswa.html" metod ="post">
+        <form action="mahasiswa.php" metod ="post">
             <table cellpading ="3">
                 <tr>
            <td> <label for="nama" >Nama</td>
