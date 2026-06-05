@@ -1,3 +1,22 @@
+<?php
+
+require "koneksi.php";
+ $qmhs = "SELECT * FROM mahasiswa" ;
+ $mhs = tampildata($qmhs);
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,13 +43,38 @@
         button>Tambah Data</button>
         <a>
     
-        <table border="1" cellspacing="0" cellpadding="10"
-        <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Nama</th>
-            <th rowspan="2">Foto</th>
-            <th colspan="3">Nilai</th>
-        </tr>
+        <table border="1" cellspacing="0" cellpadding="10">
+          <tr>
+            <th >No</th>
+            <th >Nama</th>
+            <th >NIM</th>
+            <th >Jurusan</th>
+            <th >Email</th>
+            <th >No Hp</th>
+            <th >Foto</th>
+          </tr>
+
+           <?php
+          foreach($mhs as $m) {
+           ?>
+    <tr>
+        <td align="center">1</td>
+        <td><?php echo $mhs["nama"]; ?></td>
+        <td><?php echo $mhs["nim"]; ?></td>
+        <td><?php echo $mhs["jurusan"]; ?></td>
+        <td><?php echo $mhs["email"]; ?></td>
+        <td><?php echo $mhs["no_hp"]; ?></td>
+        <td><img src="Asets/Image/Anjay.jpg" alt="Foto Nafari" width="100px"></td>
+        <td>
+            <a href="editdata.php?id=2"><button>Edit</button></a>
+            <a href="hapusdata.php?id=2"><button>Hapus</button></a>
+        </td> </tr>
+<?php
+} // 
+?>
+
+
+        <!-- </tr>
         <tr>
             <th>UTS</th>
             <th>UAS</th>
@@ -39,31 +83,42 @@
         <tr>
             <td>1</td>
             <td>Radit</td>
+            <td><13182420084></td>
+            <td>Informatika</td>
+            <td>adit43318@gmail.com</td>
+            <td>081252165563</td>
             <td><img src="Asets/Image/Anjay.jpg" alt = "Foto Nafari" width="100px"></td>
-            <td>90</td>
-            <td>80</td>
-            <td>85</td>
+            <td>
+                <a href="editdata.php?id=2"><button>Edit</button></a>
+                <a href="hapusdata.php?id=2"><button>Hapus</button></a>
+                <td>
         </tr>
         <tr>
             <td>2</td>
             <td>Lukman</td>
+            <td>1318204814</td>
+            <td>Informatika</td>
+            <td>Lukman2123232@gmail.com</td>
+            <td>081827232312</td>
             <td><img src="Asets/Image/Anjay.jpg" alt = "Foto Nafari" width="100px"></td>
-            <td>20</td>
-            <td>30</td>
-            <td>40</td>
+            <a href="editdata.php?id=2"><button>Edit</button></a>
+                <a href="hapusdata.php?id=2"><button>Hapus</button></a>
         </tr>
         <tr>
             <td>3</td>
             <td>Jambu</td>
+            <td><13182402812></td>
+            <td>Informatika</td>
+            <td>Jambu023032@gmail.com</td>
+            <td>082382322123</td>
             <td><img src="Asets/Image/Anjay.jpg" alt = "Foto Nafari" width="100px"></td>
-            <td>40</td>
-            <td>50</td>
-            <td>90</td>
+            <a href="editdata.php?id=2"><button>Edit</button></a>
+                <a href="hapusdata.php?id=2"><button>Hapus</button></a>
         </tr>
 </table>
 <br>
-<hr>
-<table border="1" cellspacing="2" cellpadding="50"
+<hr> -->
+<table border ="1" cellspacing="2" cellpadding="50">
         <tr>
             <th >1,1</th>
             <th >1,2</th>
@@ -79,7 +134,6 @@
         <tr>
             <th >3,1</th>
             <th >3,4</th>
-            
 
         </tr>
         <tr>
