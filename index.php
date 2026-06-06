@@ -16,14 +16,36 @@
 
         <hr/>
 
-        <table border="1" class="menu">
-            <tr>
-                <td><a href="index.php">Home</a></td>
-                <td><a href="profile.php">Profile</a></td>
-                <td><a href="Contact.php">Contact</a></td>
-                <td><a href="mahasiswa.php">Data Mahasiswa</a></td>
-            </tr>
-        </table>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.php">🎓 Portal Mahasiswa</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item">
+                    <a class="nav-link px-3 btn btn-outline-light text-start text-lg-center border-0" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 btn btn-outline-light text-start text-lg-center border-0" href="profile.php">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 btn btn-outline-light text-start text-lg-center border-0" href="Contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 btn btn-outline-light text-start text-lg-center border-0" href="mahasiswa.php">Data Mahasiswa</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <h3>Inilah Coach dari Alter Ego</h3>
 
