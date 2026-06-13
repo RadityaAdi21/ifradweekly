@@ -97,7 +97,7 @@ $mahasiswas = tampildata($qmhs);
                                 <td class="text-center">
                                     <!-- ID Diubah menjadi dinamis mengikuti record data -->
                                     <a href="editdata.php?id=<?= $id_mhs; ?>" class="btn btn-warning btn-sm fw-semibold me-1">Edit</a>
-                                    <a href="hapusdata.php?id=<?= $id_mhs; ?>" onclick="return confirm('Yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm fw-semibold">Hapus</a>
+                                    <a href="hapusdata.php?id=<?= $id_mhs ?>" onclick="return confirm('Yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm fw-semibold">Hapus</a>
                                 </td> 
                             </tr>
                             <?php } ?>
