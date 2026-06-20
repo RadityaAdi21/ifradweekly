@@ -87,7 +87,7 @@ $mahasiswas = tampildata($qmhs);
                                 <td class="text-center fw-bold text-muted"><?= $no++; ?></td>
                                 <td>
                                     <!-- Menampilkan foto secara rapi kotak proporsional -->
-                                    <img src="Asets/Image/Anjay.jpg" alt="Foto" width="65" height="65" class="shadow-sm border border-2 border-white">
+                                    <img src="Asets/Image/<?= $mhs['foto']; ?>" alt="Foto" width="65" height="65" class="shadow-sm border border-2 border-white">
                                 </td>
                                 <td class="fw-semibold text-primary"><?= $nim; ?></td>
                                 <td class="fw-bold text-dark"><?= $nama; ?></td>
@@ -96,8 +96,8 @@ $mahasiswas = tampildata($qmhs);
                                 <td><?= $no_hp; ?></td>
                                 <td class="text-center">
                                     <!-- ID Diubah menjadi dinamis mengikuti record data -->
-                                    <a href="editdata.php?id=<?= $id_mhs; ?>" class="btn btn-warning btn-sm fw-semibold me-1">Edit</a>
-                                    <a href="hapusdata.php?id=<?= $id_mhs ?>" onclick="return confirm('Yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm fw-semibold">Hapus</a>
+                                    <a href="ubahdata.php?id=<?= $mhs["id"]; ?>" class="btn btn-warning btn-sm fw-semibold me-1">Edit</a>
+                                    <a href="hapusdata.php?id=<?= $mhs["id"] ?>" onclick="return confirm('Yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm fw-semibold">Hapus</a>
                                 </td> 
                             </tr>
                             <?php } ?>
